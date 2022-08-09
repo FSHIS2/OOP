@@ -6,4 +6,14 @@ class Pig : Animal {
         sound = specificSound;
     }
 
+    public String Sound {
+        get {
+            return sound;
+        }
+
+        set {
+            sound = value;
+        }
+    }
+
 }

@@ -8,5 +8,7 @@ sealed class Program {
         Dog dog = new Dog("guau guau");
         pig.makeSound();
         dog.makeSound();
+        pig.Sound = "wee wee";
+        Console.WriteLine(pig.Sound);
     }
 }
