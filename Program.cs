@@ -4,7 +4,9 @@ using System;
 cannot be inherited*/
 sealed class Program {
     static void Main(String[] args) {
-        Animal animal = new Dog();
-        animal.sound();
+        Pig pig = new Pig("oink oink");
+        Dog dog = new Dog("guau guau");
+        pig.makeSound();
+        dog.makeSound();
     }
 }

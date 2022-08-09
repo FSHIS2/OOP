@@ -2,7 +2,10 @@ using System;
 
 class Animal {
     
-    public virtual void sound() {
-        Console.WriteLine("The animal makes a sound");
+    protected string sound = "";
+
+    public void makeSound() {
+        //String interpolation
+        Console.WriteLine($"This animal says {sound}");
     }
 }
