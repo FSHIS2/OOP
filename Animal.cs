@@ -1,12 +1,12 @@
 using System;
 
-class Animal {
+abstract class Animal {
     
     protected string sound = "";
 
-    public void makeSound() {
-        //String interpolation
-        Console.WriteLine($"This animal says {sound}");
+    public abstract void makeSound();
+    public void sleep() {
+        Console.WriteLine("Zzz");
     }
 
 }

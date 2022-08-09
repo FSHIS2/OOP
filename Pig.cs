@@ -2,17 +2,22 @@ using System;
 
 class Pig : Animal {
 
-    public Pig(string specificSound) {
-        sound = specificSound;
+    public Pig(string sound) {
+        this.sound = sound;
     }
 
-    public String Sound {
+    public override void makeSound()
+    {
+        Console.WriteLine($"The pig says {sound}");
+    }
+
+    public string Sound {
         get {
-            return sound;
+            return this.sound;
         }
 
         set {
-            sound = value;
+            this.sound = value;
         }
     }
 
