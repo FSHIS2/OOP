@@ -1,6 +1,6 @@
 using System;
 
-class Dog : Animal {
+class Dog : Animal, IMammal {
 
    public Dog(string sound) {
         this.sound = sound;
@@ -19,6 +19,10 @@ class Dog : Animal {
         set {
             this.sound = value;
         }
+    }
+
+    public void feed() {
+        Console.WriteLine("Feeding puppies");
     }
 
 }

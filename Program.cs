@@ -12,5 +12,7 @@ sealed class Program {
         Console.WriteLine(pig.Sound);
         pig.sleep();
         dog.sleep();
+        pig.feed();
+        dog.feed();
     }
 }
