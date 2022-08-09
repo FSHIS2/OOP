@@ -1,4 +1,5 @@
 using System;
+using MySpace;
 
 /*Sealed keyword indicates that class
 cannot be inherited*/
@@ -14,5 +15,9 @@ sealed class Program {
         dog.sleep();
         pig.feed();
         dog.feed();
+        Number pigs = Number.Three;
+        Number dogs = Number.Five;
+        Console.WriteLine(pigs);
+        Console.WriteLine(dogs);
     }
 }
