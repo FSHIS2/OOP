@@ -1,5 +1,6 @@
 using System;
 using MySpace;
+using System.IO;
 
 /*Sealed keyword indicates that class
 cannot be inherited*/
@@ -19,5 +20,11 @@ sealed class Program {
         Number dogs = Number.Five;
         Console.WriteLine(pigs);
         Console.WriteLine(dogs);
+        try {
+            string readText = File.ReadAllText("Animal.txt");
+            Console.WriteLine(readText);
+        } catch(FileNotFoundException ex) {
+            Console.WriteLine(ex.Message);
+        }
     }
 }
