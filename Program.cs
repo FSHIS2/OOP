@@ -20,11 +20,18 @@ sealed class Program {
         Number dogs = Number.Five;
         Console.WriteLine(pigs);
         Console.WriteLine(dogs);
-        try {
+        try
+        {
             string readText = File.ReadAllText("Animal.txt");
             Console.WriteLine(readText);
-        } catch(FileNotFoundException ex) {
+        }
+        catch (FileNotFoundException ex)
+        {
             Console.WriteLine(ex.Message);
+        }
+        finally
+        {
+            Console.WriteLine("This is an excellent OOP kata");
         }
     }
 }

@@ -12,6 +12,11 @@ abstract class Animal {
     
     protected string sound = "";
 
+    protected Animal(string sound)
+    {
+        this.sound = sound;
+    }
+
     public abstract void makeSound();
     public void sleep() {
         Console.WriteLine("Zzz");

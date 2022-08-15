@@ -3,8 +3,7 @@ using MySpace;
 
 class Dog : Animal, IMammal {
 
-   public Dog(string sound) {
-        this.sound = sound;
+   public Dog(string sound) : base(sound) {
    }
 
     public override void makeSound()
